@@ -27,6 +27,7 @@ public class PhotonCOnnection : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom() {
         print(" Se entro al room");
+        PhotonNetwork.Instatiate("player, new Vector3(0,0,0)")
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message) {
